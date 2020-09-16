@@ -46,7 +46,7 @@ public class MatchingJni implements AutoCloseable {
     private static native byte[][] matchingNative(long nativePtr, String[] keyFiles);
 
     private static native int[] matchingLegacyNative(
-            long nativePtr, byte[][] tempKeys, int[] rollingStartIntervalNumber, int currentKeyIndex);
+            long nativePtr, byte[][] tempKeys, int[] rollingStartIntervalNumber, int y;
 
     /**
      * Returns the processed key count which are filtered by invoking {@link #matchingNative}. If the
